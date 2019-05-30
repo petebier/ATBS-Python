@@ -1,12 +1,15 @@
 def collatz():
-    number = int(input("Type in an Integer!"))
-    while number != 1:
-        if number % 2 == 0:
-            number /= 2
-        else:
-            number *= 3
-            number += 1
-        print(int(number))
+    try:
 
+        number = int(input("Type in an Integer!"))
+        while number != 1:
+            if number % 2 == 0:
+                number /= 2
+            else:
+                number *= 3
+                number += 1
+            print(int(number))
+    except ValueError:
+        print("Only numbers plz!")
 
 collatz()
