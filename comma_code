@@ -1,7 +1,6 @@
 def commacode(spam):
     spam.insert(-1, "and")
     new_string = (", ").join(spam[:-1]) + " " + ("").join(spam[-1])
-    '''(" ").join.(spam[-1])'''
 
     print(new_string)
 
