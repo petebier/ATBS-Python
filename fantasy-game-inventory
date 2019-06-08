@@ -1,0 +1,28 @@
+things = {'rope': 1,
+          'torch': 6,
+          'gold coin': 42,
+          'dagger': 1,
+          'arrow': 12}
+
+
+def displayInventory(things):
+    print("Inventory:")
+    for i, j in things.items():
+        print(i + ": " + str(j))
+
+
+displayInventory(things)
+
+
+dragonLoot = ['gold coin', 'dagger', 'gold coin', 'ruby']
+
+inv = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1}
+
+def addToInventory(inventory, addedItems):
+    for item in addedItems:
+        item_count = inventory.get(item, 0)
+        inventory[item] = item_count + 1
+    print(inventory)
+
+
+addToInventory(inv, dragonLoot)
